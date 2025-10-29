@@ -8,6 +8,7 @@ function App() {
     phone: '',
     message: ''
   });
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,19 +30,38 @@ function App() {
     });
   };
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <div className="App">
+      {/* Mobile Menu Button */}
+      <button
+        className="mobile-menu-btn"
+        onClick={toggleMobileMenu}
+        aria-label="Toggle menu"
+      >
+        <span className={mobileMenuOpen ? 'open' : ''}></span>
+        <span className={mobileMenuOpen ? 'open' : ''}></span>
+        <span className={mobileMenuOpen ? 'open' : ''}></span>
+      </button>
+
       {/* Left-side Navigation */}
-      <nav className="side-nav">
+      <nav className={`side-nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
         <div className="nav-content">
           <h1 className="logo">MAGGY<br/>PIANO</h1>
           <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onClick={closeMobileMenu}>Home</a></li>
+            <li><a href="#about" onClick={closeMobileMenu}>About</a></li>
+            <li><a href="#services" onClick={closeMobileMenu}>Services</a></li>
+            <li><a href="#testimonials" onClick={closeMobileMenu}>Testimonials</a></li>
+            <li><a href="#faq" onClick={closeMobileMenu}>FAQ</a></li>
+            <li><a href="#contact" onClick={closeMobileMenu}>Contact</a></li>
           </ul>
           <div className="contact-info">
             <p className="phone">815-603-9854</p>
@@ -49,6 +69,11 @@ function App() {
           </div>
         </div>
       </nav>
+
+      {/* Mobile menu overlay */}
+      {mobileMenuOpen && (
+        <div className="mobile-menu-overlay" onClick={closeMobileMenu}></div>
+      )}
 
       {/* Main Content */}
       <main className="main-content">
