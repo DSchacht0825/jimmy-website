@@ -682,9 +682,20 @@ h3 {
     padding: 60px 20px;
   }
 
+  /* Fix background images on mobile - fixed attachment doesn't work on mobile */
+  .hero,
+  .about,
+  .services,
+  .testimonials,
+  .faq,
+  .contact {
+    background-attachment: scroll !important;
+  }
+
   .hero {
     height: 70vh;
     min-height: 400px;
+    background-position: center center !important;
   }
 
   .hero-content h2 {
@@ -834,6 +845,7 @@ h3 {
   .hero {
     height: 60vh;
     min-height: 350px;
+    background-position: center center !important;
   }
 
   .hero-content h2 {
