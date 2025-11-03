@@ -105,22 +105,22 @@ function App() {
             <h3>ABOUT JIMMY</h3>
             <div className="about-text">
               <p>
-                James Maggy is a distinguished piano technician whose expertise stems from
-                his education at the prestigious Berklee College of Music in Boston. With
-                a deep understanding of both the musical and technical aspects of piano
-                craftsmanship, Jimmy brings an artist's sensibility to every tuning and repair.
+                James Maggy is a Cincinnati based artist and piano technician currently
+                servicing Cincinnati, Northern Kentucky, and surrounding areas. A graduate
+                of Berklee College of Music in Boston Massachusetts, James auditioned in
+                2012 and was accepted into the piano department- where he was principled
+                in piano technology, acoustics, and majored in composition in 2016.
               </p>
               <p>
-                Based in Cincinnati, Ohio, Jimmy has dedicated his career to preserving
-                and restoring the voice of pianos across the region. His unique background
-                in music allows him to hear beyond the technical specifications, ensuring
-                each instrument achieves its fullest tonal potential.
+                Since then, James has maintained several pianos that were transported and
+                serviced daily for regional touring. Formerly based out of Los Angeles,
+                much of his work has been on studio-pianos, though he is often working on
+                pianos in a client's home.
               </p>
               <p>
-                Jimmy specializes in salvaging pianos that have been left unplayable,
-                working within each customer's budget to restore inherited and estate
-                pianos to their former glory. Whether it's a cherished family heirloom
-                or a concert grand, every piano receives the same meticulous attention.
+                Whether it's a full restoration of a family heirloom or just a charming
+                old piano someone is curious about playing again, James's attention for
+                adjustments and repairs are tailored to a piano's needs and client's budget.
               </p>
             </div>
           </div>
