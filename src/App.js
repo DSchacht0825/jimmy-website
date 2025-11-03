@@ -54,6 +54,11 @@ function App() {
       {/* Left-side Navigation */}
       <nav className={`side-nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
         <div className="nav-content">
+          <img
+            src={`${process.env.PUBLIC_URL}/maggy.jpg`}
+            alt="Jimmy Maggy"
+            className="nav-portrait"
+          />
           <h1 className="logo">MAGGY<br/>PIANO</h1>
           <ul className="nav-links">
             <li><a href="#home" onClick={closeMobileMenu}>Home</a></li>

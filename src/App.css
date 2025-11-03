@@ -99,6 +99,16 @@ html {
   z-index: 2;
 }
 
+.nav-portrait {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 .logo {
   font-size: 32px;
   font-weight: 700;
