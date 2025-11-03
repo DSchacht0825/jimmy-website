@@ -59,7 +59,6 @@ function App() {
             alt="Jimmy Maggy"
             className="nav-portrait"
           />
-          <h1 className="logo">MAGGY<br/>PIANO</h1>
           <ul className="nav-links">
             <li><a href="#home" onClick={closeMobileMenu}>Home</a></li>
             <li><a href="#about" onClick={closeMobileMenu}>About</a></li>
