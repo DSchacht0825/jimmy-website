@@ -193,78 +193,103 @@ function App() {
         >
           <div className="testimonials-overlay"></div>
           <div className="section-content" style={{ position: 'relative', zIndex: 2 }}>
-            <h3>CLIENT VOICES</h3>
+            <h3>THUMBTACK REVIEWS</h3>
             <div className="testimonials-grid">
               <div className="testimonial-item testimonial-large">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  Jimmy brought my grandmother's 1927 Steinway baby grand back to life after it sat untouched
-                  for nearly fifteen years in our Hyde Park home. His expertise from Berklee College combined
-                  with his genuine passion for restoration made all the difference. The piano now holds pitch
-                  beautifully and has regained its warm, resonant tone. He worked within our family's budget
-                  and treated this heirloom with the reverence it deserved.
+                  James was such a pleasure to work with. He showed up, did his thing in a timely manner
+                  and was also very personable. You can tell he enjoys what he does. Very reasonably priced
+                  and will definitely reach out to him again for piano tuning. My Yamaha is sounding better
+                  than ever. Thanks again, James!
                 </p>
-                <p className="testimonial-author">— Margaret Chen</p>
-                <p className="testimonial-location">Hyde Park, Cincinnati</p>
+                <p className="testimonial-author">— Rana K.</p>
+                <p className="testimonial-location">March 11, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  As a piano instructor in Mason, I've worked with numerous technicians over the years.
-                  Jimmy's attention to detail and understanding of tonal quality is exceptional. He doesn't
-                  just tune—he listens. My students immediately noticed the improved touch response and
-                  clarity after his regulation work.
+                  James did an excellent job tuning our "new to us" piano. He responded quickly and our
+                  piano sounds wonderful!
                 </p>
-                <p className="testimonial-author">— David Thornton</p>
-                <p className="testimonial-location">Mason, OH</p>
+                <p className="testimonial-author">— Kristen L.</p>
+                <p className="testimonial-location">July 24, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  We purchased an estate piano in Covington that had severe humidity damage and sticky keys
-                  throughout. Jimmy spent hours carefully restoring the action and replacing damaged components.
-                  His honest assessment and fair pricing earned our trust immediately. The piano now performs
-                  flawlessly for our daughter's daily practice.
+                  He answered me instantly and came to tune my piano the next day! My piano sounds so
+                  much better now! Definitely gonna have him come back :)
                 </p>
-                <p className="testimonial-author">— Robert & Linda Garcia</p>
-                <p className="testimonial-location">Covington, KY</p>
+                <p className="testimonial-author">— Bella K.</p>
+                <p className="testimonial-location">May 7, 2025</p>
               </div>
 
               <div className="testimonial-item testimonial-accent">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  Our church's concert grand in Fairfield required comprehensive voicing and regulation before
-                  our spring recital series. Jimmy's work transformed the instrument. His training and artistic
-                  sensibility shine through in every aspect of his craft. The even voicing across all registers
-                  is simply remarkable.
+                  We were really happy with Jim. He tuned are piano beautifully, and I now have a new "guy".
+                  Hit me up if you want a referral.
                 </p>
-                <p className="testimonial-author">— Pastor James Mitchell</p>
-                <p className="testimonial-location">Fairfield Community Church</p>
+                <p className="testimonial-author">— Trish G.</p>
+                <p className="testimonial-location">February 5, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  I inherited a 1960s Yamaha upright that hadn't been tuned since 2008. Jimmy explained
-                  it would need two tunings to stabilize and he was absolutely right. His knowledge of
-                  piano mechanics and patient explanations helped me understand proper piano maintenance.
-                  Now servicing the greater Cincinnati area, he's become our go-to technician.
+                  Solid piano tuning and solid dude
                 </p>
-                <p className="testimonial-author">— Emily Sutton</p>
-                <p className="testimonial-location">Dayton, OH</p>
+                <p className="testimonial-author">— Judah e.</p>
+                <p className="testimonial-location">February 3, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  Jimmy's expertise with antique pianos is unmatched in the Cincinnati region. He restored
-                  our 1890s parlor grand with such care and precision, preserving its historical character
-                  while ensuring modern playability. His reasonable rates for such specialized work amazed us.
+                  James fixed the sticky key efficiently and effectively. Thanks to his professionalism
                 </p>
-                <p className="testimonial-author">— Thomas Whitmore</p>
-                <p className="testimonial-location">Indian Hill, Cincinnati</p>
+                <p className="testimonial-author">— Richard L.</p>
+                <p className="testimonial-location">August 12, 2025</p>
+              </div>
+
+              <div className="testimonial-item">
+                <div className="quote-mark">"</div>
+                <p className="testimonial-text">
+                  Very nice person. Concentrated, patient, polite, and professional.
+                </p>
+                <p className="testimonial-author">— Baohe C.</p>
+                <p className="testimonial-location">July 16, 2025</p>
+              </div>
+
+              <div className="testimonial-item">
+                <div className="quote-mark">"</div>
+                <p className="testimonial-text">
+                  Did a wonderful job and explained the process as he worked. I'd highly recommend James.
+                </p>
+                <p className="testimonial-author">— Anthony L.</p>
+                <p className="testimonial-location">July 8, 2025</p>
+              </div>
+
+              <div className="testimonial-item">
+                <div className="quote-mark">"</div>
+                <p className="testimonial-text">
+                  James was awesome! My old piano sounds new again.
+                </p>
+                <p className="testimonial-author">— Kerry N.</p>
+                <p className="testimonial-location">May 31, 2025</p>
+              </div>
+
+              <div className="testimonial-item">
+                <div className="quote-mark">"</div>
+                <p className="testimonial-text">
+                  Jimmy got my new antique piano sounding exactly the way I wanted it to. Wouldn't recommend
+                  anybody else.
+                </p>
+                <p className="testimonial-author">— James M.</p>
+                <p className="testimonial-location">January 30, 2025</p>
               </div>
             </div>
           </div>
