@@ -54,23 +54,14 @@ function App() {
       {/* Left-side Navigation */}
       <nav className={`side-nav ${mobileMenuOpen ? 'mobile-open' : ''}`}>
         <div className="nav-content">
-          <img
-            src={`${process.env.PUBLIC_URL}/maggy.jpg`}
-            alt="Jimmy Maggy"
-            className="nav-portrait"
-          />
           <ul className="nav-links">
-            <li><a href="#home" onClick={closeMobileMenu}>Home</a></li>
-            <li><a href="#about" onClick={closeMobileMenu}>About</a></li>
-            <li><a href="#services" onClick={closeMobileMenu}>Services</a></li>
-            <li><a href="#testimonials" onClick={closeMobileMenu}>Testimonials</a></li>
-            <li><a href="#faq" onClick={closeMobileMenu}>FAQ</a></li>
-            <li><a href="#contact" onClick={closeMobileMenu}>Contact</a></li>
+            <li><a href="#home" onClick={closeMobileMenu}>home</a></li>
+            <li><a href="#about" onClick={closeMobileMenu}>about</a></li>
+            <li><a href="#services" onClick={closeMobileMenu}>services</a></li>
+            <li><a href="#testimonials" onClick={closeMobileMenu}>testimonials</a></li>
+            <li><a href="#faq" onClick={closeMobileMenu}>faq</a></li>
+            <li><a href="#contact" onClick={closeMobileMenu}>contact</a></li>
           </ul>
-          <div className="contact-info">
-            <p className="phone">815-603-9854</p>
-            <p className="location">Cincinnati, OH</p>
-          </div>
         </div>
       </nav>
 
@@ -93,283 +84,305 @@ function App() {
         </section>
 
         {/* About Section */}
-        <section
-          id="about"
-          className="about"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/image1.jpg)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            position: 'relative'
-          }}
-        >
-          <div className="about-overlay"></div>
-          <div className="section-content" style={{ position: 'relative', zIndex: 2 }}>
-            <h3>ABOUT JIMMY</h3>
-            <div className="about-text">
-              <p>
-                James Maggy is a Cincinnati based artist and piano technician currently
-                servicing Cincinnati, Northern Kentucky, and surrounding areas. A graduate
-                of Berklee College of Music in Boston Massachusetts, James auditioned in
-                2012 and was accepted into the piano department- where he was principled
-                in piano technology, acoustics, and majored in composition in 2016.
-              </p>
-              <p>
-                Since then, James has maintained several pianos that were transported and
-                serviced daily for regional touring. Formerly based out of Los Angeles,
-                much of his work has been on studio-pianos, though he is often working on
-                pianos in a client's home.
-              </p>
-              <p>
-                Whether it's a full restoration of a family heirloom or just a charming
-                old piano someone is curious about playing again, James's attention for
-                adjustments and repairs are tailored to a piano's needs and client's budget.
-              </p>
+        <section id="about" className="about">
+          <div className="section-content">
+            <h3>about jimmy</h3>
+            <div className="about-container">
+              <img
+                src={`${process.env.PUBLIC_URL}/image1.jpg`}
+                alt="Piano"
+                className="about-image"
+              />
+              <div className="about-text">
+                <p>
+                  james maggy is a cincinnati based artist and piano technician currently
+                  servicing cincinnati, northern kentucky, and surrounding areas. a graduate
+                  of berklee college of music in boston massachusetts, james auditioned in
+                  2012 and was accepted into the piano department- where he was principled
+                  in piano technology, acoustics, and majored in composition in 2016.
+                </p>
+                <p>
+                  since then, james has maintained several pianos that were transported and
+                  serviced daily for regional touring. formerly based out of los angeles,
+                  much of his work has been on studio-pianos, though he is often working on
+                  pianos in a client's home.
+                </p>
+                <p>
+                  whether it's a full restoration of a family heirloom or just a charming
+                  old piano someone is curious about playing again, james's attention for
+                  adjustments and repairs are tailored to a piano's needs and client's budget.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Services Section */}
-        <section
-          id="services"
-          className="services"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/image1.jpg)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            position: 'relative'
-          }}
-        >
-          <div className="services-overlay"></div>
-          <div className="section-content" style={{ position: 'relative', zIndex: 2 }}>
-            <h3>SERVICES</h3>
+        <section id="services" className="services">
+          <div className="section-content">
+            <h3>services</h3>
             <div className="services-grid">
               <div className="service-item">
-                <h4>Piano Tuning</h4>
-                <p>Professional tuning services to restore perfect pitch and harmony</p>
-                <p className="price">$100-$200</p>
+                <h4>piano tuning</h4>
+                <p>
+                  practiced in a method of tuning referred to as "equal temperament", meticulous
+                  attention is given to "beat-rates" and relationships between notes on a piano.
+                  this ensures that each string is not only in tune, but properly compromising to
+                  create harmony with the rest of the notes on a piano.
+                </p>
               </div>
               <div className="service-item">
-                <h4>Repair & Restoration</h4>
-                <p>Comprehensive restoration of antique and concert grand pianos</p>
+                <h4>restoration</h4>
+                <p>
+                  the full restoration of a family heirloom or found treasure is an incredible project
+                  to be part of, as many piano's have such rich histories and have endured so many changes.
+                  some restoration projects require everything to be replaced besides the original plate
+                  and cabinet, while other projects are focused on utilizing as much of the original as
+                  possible. this can include rebuilding pieces of the originional actions and reinstalling
+                  the pins and felts that make every work effectively.
+                </p>
               </div>
               <div className="service-item">
-                <h4>Key Repair</h4>
-                <p>Fixing stuck and sticky keys, key replacement and regulation</p>
+                <h4>repair</h4>
+                <p>
+                  taking the time to have professional repairs done on your piano can make a world of
+                  difference and transform your instrument quickly. whether you have a new piano with
+                  minor issues or an old piano that's been out of commission for years, a few hours of
+                  attention can make a huge difference.
+                </p>
+                <p>
+                  sometimes client has a specific budget in mind. it's also not uncommon that a client
+                  wants to preserve elements of the "old timey" sound of their piano for recording/etc.
+                  in these cases, a piano's needs can be triaged to restore essential functions of a
+                  piano, and returned to a place where it can be appreciated again.
+                </p>
               </div>
               <div className="service-item">
-                <h4>Action & Pedal Repair</h4>
-                <p>Expert repair of piano action mechanisms and pedal systems</p>
+                <h4>cleaning</h4>
+                <p>
+                  a thorough cleaning can often benefit the functioning of a piano, as well as improve
+                  air quality in a home. often things unnoticed are dropped inside parts of a piano and
+                  subtly influence performance. involving disassembly, a piano cleaning can reveal hidden
+                  treasure and quite literally breathe new life into an instrument.
+                </p>
               </div>
               <div className="service-item">
-                <h4>String Replacement</h4>
-                <p>Professional string replacement and tensioning</p>
+                <h4>string replacement</h4>
+                <p>
+                  strings often break after moving a piano, during temperature changes, or sometimes
+                  spontaneously for seemingly no reason at all. the broken string can be left inside
+                  the piano so it can be later measured for it's replacement. broken bass strings will
+                  usually need to be ordered and custom-made. strings are carefully stretched and wound
+                  when installed. if you are replacing a string on your piano it may need to be tuned a
+                  second time in the year to help stretch the string to stay in tune.
+                </p>
               </div>
               <div className="service-item">
-                <h4>Voicing & Regulation</h4>
-                <p>Fine-tuning tone quality and touch response</p>
+                <h4>voicing & regulation</h4>
+                <p>
+                  voicing and regulation is the practiced technique of making adjustments to the action
+                  and other mechanisms in the piano to optimize dynamics and the overall playability of
+                  a piano. if a piano is having issues with sticking keys, sustained notes, or unwanted
+                  clicks/noises, a voicing and regulation is almost always where the issue will be resolved.
+                </p>
               </div>
-            </div>
-            <div className="service-note">
-              <p><strong>Service Area:</strong> Cincinnati, Northern Kentucky, Southern Indiana,
-              Dayton, Mason, Fairfield, and surrounding communities</p>
+              <div className="service-item">
+                <h4>key & pedal repair</h4>
+                <p>
+                  keys sometimes swell in changing climates or become damaged over time requiring adjustments
+                  to eliminate friction or noise and to match the feel of the rest of a piano. similar issues
+                  can arise with the pedals on a piano. both keys and pedals are responsible for triggering a
+                  series of chain reactions within a piano which makes adjustments to the alignment and
+                  resistance of these parts extremely influential to a pianos sound and feel.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Testimonials Section */}
-        <section
-          id="testimonials"
-          className="testimonials"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/image1.jpg)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            position: 'relative'
-          }}
-        >
-          <div className="testimonials-overlay"></div>
-          <div className="section-content" style={{ position: 'relative', zIndex: 2 }}>
-            <h3>THUMBTACK REVIEWS</h3>
+        <section id="testimonials" className="testimonials">
+          <div className="section-content">
+            <h3>thumbtack reviews</h3>
             <div className="testimonials-grid">
               <div className="testimonial-item testimonial-large">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  James was such a pleasure to work with. He showed up, did his thing in a timely manner
-                  and was also very personable. You can tell he enjoys what he does. Very reasonably priced
-                  and will definitely reach out to him again for piano tuning. My Yamaha is sounding better
-                  than ever. Thanks again, James!
+                  james was such a pleasure to work with. he showed up, did his thing in a timely manner
+                  and was also very personable. you can tell he enjoys what he does. very reasonably priced
+                  and will definitely reach out to him again for piano tuning. my yamaha is sounding better
+                  than ever. thanks again, james!
                 </p>
-                <p className="testimonial-author">— Rana K.</p>
-                <p className="testimonial-location">March 11, 2025</p>
+                <p className="testimonial-author">— rana k.</p>
+                <p className="testimonial-location">march 11, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  James did an excellent job tuning our "new to us" piano. He responded quickly and our
+                  james did an excellent job tuning our "new to us" piano. he responded quickly and our
                   piano sounds wonderful!
                 </p>
-                <p className="testimonial-author">— Kristen L.</p>
-                <p className="testimonial-location">July 24, 2025</p>
+                <p className="testimonial-author">— kristen l.</p>
+                <p className="testimonial-location">july 24, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  He answered me instantly and came to tune my piano the next day! My piano sounds so
-                  much better now! Definitely gonna have him come back :)
+                  he answered me instantly and came to tune my piano the next day! my piano sounds so
+                  much better now! definitely gonna have him come back :)
                 </p>
-                <p className="testimonial-author">— Bella K.</p>
-                <p className="testimonial-location">May 7, 2025</p>
+                <p className="testimonial-author">— bella k.</p>
+                <p className="testimonial-location">may 7, 2025</p>
               </div>
 
               <div className="testimonial-item testimonial-accent">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  We were really happy with Jim. He tuned are piano beautifully, and I now have a new "guy".
-                  Hit me up if you want a referral.
+                  we were really happy with jim. he tuned are piano beautifully, and i now have a new "guy".
+                  hit me up if you want a referral.
                 </p>
-                <p className="testimonial-author">— Trish G.</p>
-                <p className="testimonial-location">February 5, 2025</p>
+                <p className="testimonial-author">— trish g.</p>
+                <p className="testimonial-location">february 5, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  Solid piano tuning and solid dude
+                  solid piano tuning and solid dude
                 </p>
-                <p className="testimonial-author">— Judah e.</p>
-                <p className="testimonial-location">February 3, 2025</p>
+                <p className="testimonial-author">— judah e.</p>
+                <p className="testimonial-location">february 3, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  James fixed the sticky key efficiently and effectively. Thanks to his professionalism
+                  james fixed the sticky key efficiently and effectively. thanks to his professionalism
                 </p>
-                <p className="testimonial-author">— Richard L.</p>
-                <p className="testimonial-location">August 12, 2025</p>
+                <p className="testimonial-author">— richard l.</p>
+                <p className="testimonial-location">august 12, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  Very nice person. Concentrated, patient, polite, and professional.
+                  very nice person. concentrated, patient, polite, and professional.
                 </p>
-                <p className="testimonial-author">— Baohe C.</p>
-                <p className="testimonial-location">July 16, 2025</p>
+                <p className="testimonial-author">— baohe c.</p>
+                <p className="testimonial-location">july 16, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  Did a wonderful job and explained the process as he worked. I'd highly recommend James.
+                  did a wonderful job and explained the process as he worked. i'd highly recommend james.
                 </p>
-                <p className="testimonial-author">— Anthony L.</p>
-                <p className="testimonial-location">July 8, 2025</p>
+                <p className="testimonial-author">— anthony l.</p>
+                <p className="testimonial-location">july 8, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  James was awesome! My old piano sounds new again.
+                  james was awesome! my old piano sounds new again.
                 </p>
-                <p className="testimonial-author">— Kerry N.</p>
-                <p className="testimonial-location">May 31, 2025</p>
+                <p className="testimonial-author">— kerry n.</p>
+                <p className="testimonial-location">may 31, 2025</p>
               </div>
 
               <div className="testimonial-item">
                 <div className="quote-mark">"</div>
                 <p className="testimonial-text">
-                  Jimmy got my new antique piano sounding exactly the way I wanted it to. Wouldn't recommend
+                  jimmy got my new antique piano sounding exactly the way i wanted it to. wouldn't recommend
                   anybody else.
                 </p>
-                <p className="testimonial-author">— James M.</p>
-                <p className="testimonial-location">January 30, 2025</p>
+                <p className="testimonial-author">— james m.</p>
+                <p className="testimonial-location">january 30, 2025</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section
-          id="faq"
-          className="faq"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/image1.jpg)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            position: 'relative'
-          }}
-        >
-          <div className="faq-overlay"></div>
-          <div className="section-content" style={{ position: 'relative', zIndex: 2 }}>
-            <h3>FREQUENTLY ASKED QUESTIONS</h3>
+        <section id="faq" className="faq">
+          <div className="section-content">
+            <h3>frequently asked questions</h3>
             <div className="faq-list">
               <div className="faq-item">
-                <h4>How often should my piano be tuned?</h4>
+                <h4>how often should my piano be tuned?</h4>
                 <p>
-                  Most pianos should be tuned at least once or twice a year to maintain
-                  optimal performance. Pianos in concert settings or heavy use may require
-                  more frequent tuning. If your piano hasn't been tuned in over 5 years,
+                  most pianos should be tuned at least once or twice a year to maintain
+                  optimal performance. pianos in concert settings or heavy use may require
+                  more frequent tuning. if your piano hasn't been tuned in over 5 years,
                   it will typically require two tunings to properly hold pitch.
                 </p>
               </div>
               <div className="faq-item">
-                <h4>How much does piano tuning cost?</h4>
+                <h4>what does a tuning cost?</h4>
                 <p>
-                  Piano tuning ranges from $100-$200, depending on your location and the
-                  condition of your piano. Minor sticky key adjustments during a regular
-                  tuning are included in the tuning rate ($150-$200). More extensive repairs
-                  requiring parts replacement may cost $100-$200 for 1-2 hours of labor.
+                  • between $100 & $200 depending on location and the condition of the piano.
+                </p>
+                <p>
+                  • a piano thats been kept in fluctuating temperatures or hasn't been tuned
+                  in 5+ years typically needs to be tuned twice (sometimes in one visit) to
+                  hold a pitch.
                 </p>
               </div>
               <div className="faq-item">
-                <h4>Can you repair stuck or sticky keys?</h4>
+                <h4>how much does it cost to fix sticky keys?</h4>
                 <p>
-                  Yes! Sticky key repairs are a specialty. Minor adjustments can often be
-                  made during a regular tuning appointment. For more extensive repairs
-                  requiring parts replacement, additional time and cost may be involved.
+                  • a lot of the time sticky-key issues are something i can fix via making
+                  adjustments while i'm tuning a piano. if that's the case, i cover minor
+                  repairs in my tuning rate. ($150-$200)
+                </p>
+                <p>
+                  • other times keys are sticking because pieces within the piano-action
+                  need to be replaced. luckily, a majority of the replacement parts are
+                  very inexpensive- they just take time to install. depending on the project
+                  it could take one to 2 hours. ($100-$200)
                 </p>
               </div>
               <div className="faq-item">
-                <h4>Do you work on antique pianos?</h4>
+                <h4>do you work on antique pianos?</h4>
                 <p>
-                  Absolutely. Jimmy specializes in restoring antique and estate pianos,
-                  often salvaging instruments that others have deemed unplayable. Every
-                  effort is made to work within your budget to preserve these treasured
-                  instruments.
+                  absolutely. i especially enjoy bringing older pianos back to life. a full-on
+                  restoration can become pretty elaborate. sometimes a client has a specific
+                  budget in mind. it's also not uncommon that a client wants to preserve elements
+                  of the "old timey" sound of their piano for recording/etc. in these cases i can
+                  triage a piano's needs and restore essential functions of a piano, bringing it
+                  back to a place where it can be appreciated again.
                 </p>
               </div>
               <div className="faq-item">
-                <h4>What areas do you service?</h4>
+                <h4>what areas do you service?</h4>
                 <p>
-                  Primary service area includes Cincinnati, Northern Kentucky, Southern
-                  Indiana, and surrounding communities including Dayton, Mason, and Fairfield.
-                  Contact us to confirm service availability in your specific location.
+                  primary service area includes cincinnati, northern kentucky, eastern indiana,
+                  and surrounding communities including dayton, mason, and fairfield. contact to
+                  confirm service availability in your specific location.
                 </p>
               </div>
               <div className="faq-item">
-                <h4>Why does my piano need multiple tunings if it hasn't been tuned in years?</h4>
+                <h4>why does my piano need multiple tunings if it hasn't been tuned in years?</h4>
                 <p>
-                  Pianos that have been in fluctuating temperatures or haven't been tuned
-                  in 5+ years typically require two tunings. The first brings the piano
-                  closer to pitch, and the second (done after the piano has settled) ensures
-                  it holds that pitch properly over time.
+                  pianos that have been in fluctuating temperatures or haven't been tuned in
+                  5+ years typically require two tunings. the first brings the piano closer
+                  to pitch, and the second (done after the piano has settled) ensures it holds
+                  that pitch properly over time.
                 </p>
               </div>
               <div className="faq-item">
-                <h4>What is your background and training?</h4>
+                <h4>what is your background and training?</h4>
                 <p>
-                  Jimmy studied at Berklee College of Music in Boston, bringing both musical
-                  expertise and technical precision to every piano service. This unique
-                  combination ensures not just technical accuracy, but a musician's ear
-                  for tonal quality.
+                  a graduate of berklee college of music in boston massachusetts, james auditioned
+                  in 2012 and was accepted into the piano department- where he was principled in
+                  piano technology, acoustics, and majored in composition in 2016. since then,
+                  james has maintained several pianos that were transported and serviced daily
+                  for regional touring. formerly based out of los angeles, much of his work has
+                  been on studio-pianos, though he is often working on pianos in a client's home,
+                  whether it's a full restoration of a family heirloom or just a charming old piano
+                  someone is curious about playing again.
                 </p>
               </div>
             </div>
@@ -377,31 +390,20 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section
-          id="contact"
-          className="contact"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/image1.jpg)`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            position: 'relative'
-          }}
-        >
-          <div className="contact-overlay"></div>
-          <div className="section-content" style={{ position: 'relative', zIndex: 2 }}>
-            <h3>GET IN TOUCH</h3>
+        <section id="contact" className="contact">
+          <div className="section-content">
+            <h3>get in touch</h3>
             <div className="contact-container">
               <div className="contact-details">
                 <div className="detail-item">
-                  <h4>PHONE</h4>
+                  <h4>phone</h4>
                   <p><a href="tel:8156039854">815-603-9854</a></p>
                 </div>
                 <div className="detail-item">
-                  <h4>SERVICE AREA</h4>
-                  <p>Cincinnati, OH<br/>
-                  Northern Kentucky<br/>
-                  Southern Indiana</p>
+                  <h4>service area</h4>
+                  <p>cincinnati, oh<br/>
+                  northern kentucky<br/>
+                  southern indiana</p>
                 </div>
               </div>
               <form
@@ -416,7 +418,7 @@ function App() {
                   <input
                     type="text"
                     name="name"
-                    placeholder="NAME"
+                    placeholder="name"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -426,7 +428,7 @@ function App() {
                   <input
                     type="email"
                     name="email"
-                    placeholder="EMAIL"
+                    placeholder="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -436,7 +438,7 @@ function App() {
                   <input
                     type="tel"
                     name="phone"
-                    placeholder="PHONE"
+                    placeholder="phone"
                     value={formData.phone}
                     onChange={handleChange}
                   />
@@ -444,21 +446,21 @@ function App() {
                 <div className="form-group">
                   <textarea
                     name="message"
-                    placeholder="MESSAGE"
+                    placeholder="message"
                     value={formData.message}
                     onChange={handleChange}
                     rows="6"
                     required
                   />
                 </div>
-                <button type="submit" className="submit-btn">SEND MESSAGE</button>
+                <button type="submit" className="submit-btn">send message</button>
               </form>
             </div>
           </div>
         </section>
 
         <footer className="footer">
-          <p>&copy; {new Date().getFullYear()} Maggy Piano Services. Cincinnati, Ohio.</p>
+          <p>&copy; {new Date().getFullYear()} maggy piano services. cincinnati, ohio.</p>
         </footer>
       </main>
     </div>
