@@ -80,13 +80,12 @@ function App() {
             backgroundImage: `url(${process.env.PUBLIC_URL}/image2.jpg)`
           }}
         >
-          <div className="hero-overlay"></div>
         </section>
 
         {/* About Section */}
         <section id="about" className="about">
           <div className="section-content">
-            <h3>about jimmy</h3>
+            <h3>about</h3>
             <div className="about-container">
               <img
                 src={`${process.env.PUBLIC_URL}/image1.jpg`}
