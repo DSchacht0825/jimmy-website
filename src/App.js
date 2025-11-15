@@ -9,6 +9,8 @@ function App() {
     message: ''
   });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   // Add structured data for SEO
   useEffect(() => {
@@ -252,6 +254,15 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Prevent multiple submissions
+    if (isSubmitting) {
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
     // Netlify form handling
     const form = e.target;
     fetch('/', {
@@ -259,8 +270,26 @@ function App() {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(new FormData(form)).toString()
     })
-      .then(() => alert('Thank you for your message! We will be in touch soon.'))
-      .catch((error) => alert('Error submitting form. Please call us directly.'));
+      .then(() => {
+        setSubmitStatus('success');
+        // Clear form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        });
+        // Reset submit button after 3 seconds
+        setTimeout(() => {
+          setIsSubmitting(false);
+          setSubmitStatus(null);
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error('Form submission error:', error);
+        setSubmitStatus('error');
+        setIsSubmitting(false);
+      });
   };
 
   const handleChange = (e) => {
@@ -692,7 +721,27 @@ function App() {
                     required
                   />
                 </div>
-                <button type="submit" className="submit-btn">send message</button>
+                <button
+                  type="submit"
+                  className="submit-btn"
+                  disabled={isSubmitting}
+                  style={{
+                    opacity: isSubmitting ? 0.6 : 1,
+                    cursor: isSubmitting ? 'not-allowed' : 'pointer'
+                  }}
+                >
+                  {isSubmitting ? 'sending...' : submitStatus === 'success' ? 'sent!' : 'send message'}
+                </button>
+                {submitStatus === 'success' && (
+                  <p style={{ color: '#4CAF50', marginTop: '10px', fontSize: '14px' }}>
+                    Thank you for your message! We will be in touch soon.
+                  </p>
+                )}
+                {submitStatus === 'error' && (
+                  <p style={{ color: '#f44336', marginTop: '10px', fontSize: '14px' }}>
+                    Error submitting form. Please call us directly at 815-603-9854.
+                  </p>
+                )}
               </form>
             </div>
           </div>
