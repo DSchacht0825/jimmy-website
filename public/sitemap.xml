@@ -7,12 +7,12 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://maggiepianoservices.netlify.app/</loc>
+    <loc>https://www.callmaggy.com/</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://maggiepianoservices.netlify.app/image2.jpg</image:loc>
+      <image:loc>https://www.callmaggy.com/image2.jpg</image:loc>
       <image:title>Maggy Piano Services - Professional Piano Tuning Cincinnati</image:title>
       <image:caption>Expert piano tuning and restoration services in Cincinnati, Ohio</image:caption>
     </image:image>
@@ -20,12 +20,12 @@
 
   <!-- About Section -->
   <url>
-    <loc>https://maggiepianoservices.netlify.app/#about</loc>
+    <loc>https://www.callmaggy.com/#about</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://maggiepianoservices.netlify.app/image1.jpg</image:loc>
+      <image:loc>https://www.callmaggy.com/image1.jpg</image:loc>
       <image:title>James Maggy - Piano Technician</image:title>
       <image:caption>Berklee College of Music trained piano technician specializing in piano technology and acoustics</image:caption>
     </image:image>
@@ -33,7 +33,7 @@
 
   <!-- Services Section -->
   <url>
-    <loc>https://maggiepianoservices.netlify.app/#services</loc>
+    <loc>https://www.callmaggy.com/#services</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -41,7 +41,7 @@
 
   <!-- Testimonials Section -->
   <url>
-    <loc>https://maggiepianoservices.netlify.app/#testimonials</loc>
+    <loc>https://www.callmaggy.com/#testimonials</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -49,7 +49,7 @@
 
   <!-- FAQ Section -->
   <url>
-    <loc>https://maggiepianoservices.netlify.app/#faq</loc>
+    <loc>https://www.callmaggy.com/#faq</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -57,7 +57,7 @@
 
   <!-- Contact Section -->
   <url>
-    <loc>https://maggiepianoservices.netlify.app/#contact</loc>
+    <loc>https://www.callmaggy.com/#contact</loc>
     <lastmod>2025-11-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

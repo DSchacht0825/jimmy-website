@@ -19,12 +19,12 @@ function App() {
       "@graph": [
         {
           "@type": "LocalBusiness",
-          "@id": "https://maggiepianoservices.netlify.app/#organization",
+          "@id": "https://www.callmaggy.com/#organization",
           "name": "Maggy Piano Services",
           "alternateName": "James Maggy Piano Services",
-          "url": "https://maggiepianoservices.netlify.app/",
-          "logo": "https://maggiepianoservices.netlify.app/image1.jpg",
-          "image": "https://maggiepianoservices.netlify.app/image2.jpg",
+          "url": "https://www.callmaggy.com/",
+          "logo": "https://www.callmaggy.com/image1.jpg",
+          "image": "https://www.callmaggy.com/image2.jpg",
           "description": "Professional piano tuning, repair, and restoration services in Cincinnati, Northern Kentucky, and Southern Indiana. Berklee College of Music trained technician specializing in piano technology and acoustics.",
           "telephone": "+1-815-603-9854",
           "priceRange": "$100 - $200",
@@ -114,10 +114,10 @@ function App() {
         },
         {
           "@type": "Service",
-          "@id": "https://maggiepianoservices.netlify.app/#piano-tuning",
+          "@id": "https://www.callmaggy.com/#piano-tuning",
           "serviceType": "Piano Tuning",
           "provider": {
-            "@id": "https://maggiepianoservices.netlify.app/#organization"
+            "@id": "https://www.callmaggy.com/#organization"
           },
           "areaServed": {
             "@type": "State",
