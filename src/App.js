@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
@@ -9,6 +9,246 @@ function App() {
     message: ''
   });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Add structured data for SEO
+  useEffect(() => {
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://maggiepianoservices.netlify.app/#organization",
+          "name": "Maggy Piano Services",
+          "alternateName": "James Maggy Piano Services",
+          "url": "https://maggiepianoservices.netlify.app/",
+          "logo": "https://maggiepianoservices.netlify.app/image1.jpg",
+          "image": "https://maggiepianoservices.netlify.app/image2.jpg",
+          "description": "Professional piano tuning, repair, and restoration services in Cincinnati, Northern Kentucky, and Southern Indiana. Berklee College of Music trained technician specializing in piano technology and acoustics.",
+          "telephone": "+1-815-603-9854",
+          "priceRange": "$100 - $200",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cincinnati",
+            "addressRegion": "OH",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "39.103119",
+            "longitude": "-84.512020"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Cincinnati",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ohio"
+              }
+            },
+            {
+              "@type": "Place",
+              "name": "Northern Kentucky"
+            },
+            {
+              "@type": "Place",
+              "name": "Southern Indiana"
+            },
+            {
+              "@type": "City",
+              "name": "Dayton",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ohio"
+              }
+            },
+            {
+              "@type": "City",
+              "name": "Mason",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ohio"
+              }
+            },
+            {
+              "@type": "City",
+              "name": "Fairfield",
+              "containedInPlace": {
+                "@type": "State",
+                "name": "Ohio"
+              }
+            }
+          ],
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "James Maggy",
+            "jobTitle": "Piano Technician",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Berklee College of Music",
+              "location": "Boston, Massachusetts"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "10",
+            "bestRating": "5",
+            "worstRating": "5"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://maggiepianoservices.netlify.app/#piano-tuning",
+          "serviceType": "Piano Tuning",
+          "provider": {
+            "@id": "https://maggiepianoservices.netlify.app/#organization"
+          },
+          "areaServed": {
+            "@type": "State",
+            "name": "Ohio"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Piano Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Piano Tuning",
+                  "description": "Equal temperament tuning with meticulous attention to beat-rates and note relationships"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Piano Restoration",
+                  "description": "Full restoration of family heirlooms and antique pianos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Piano Repair",
+                  "description": "Professional repairs for new and old pianos"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Piano Cleaning",
+                  "description": "Thorough cleaning with disassembly to improve functioning and air quality"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "String Replacement",
+                  "description": "Professional string replacement and custom bass string ordering"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Voicing & Regulation",
+                  "description": "Action adjustments to optimize dynamics and playability"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Key & Pedal Repair",
+                  "description": "Adjustments to eliminate friction and match piano feel"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How often should my piano be tuned?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most pianos should be tuned at least once or twice a year to maintain optimal performance. Pianos in concert settings or heavy use may require more frequent tuning. If your piano hasn't been tuned in over 5 years, it will typically require two tunings to properly hold pitch."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does a piano tuning cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Piano tuning costs between $100 & $200 depending on location and the condition of the piano. A piano that's been kept in fluctuating temperatures or hasn't been tuned in 5+ years typically needs to be tuned twice (sometimes in one visit) to hold a pitch."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does it cost to fix sticky keys?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A lot of the time sticky-key issues can be fixed via adjustments while tuning a piano, covered in the tuning rate ($150-$200). Other times keys need replacement parts, which are inexpensive but take time to install, costing $100-$200 depending on the project."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work on antique pianos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We especially enjoy bringing older pianos back to life. Restoration projects can be customized to fit specific budgets and can preserve the original 'old timey' sound while restoring essential functions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What areas do you service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Primary service area includes Cincinnati, Northern Kentucky, Eastern Indiana, and surrounding communities including Dayton, Mason, and Fairfield."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why does my piano need multiple tunings if it hasn't been tuned in years?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pianos that have been in fluctuating temperatures or haven't been tuned in 5+ years typically require two tunings. The first brings the piano closer to pitch, and the second (done after the piano has settled) ensures it holds that pitch properly over time."
+              }
+            }
+          ]
+        }
+      ]
+    };
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -89,26 +329,26 @@ function App() {
             <div className="about-container">
               <img
                 src={`${process.env.PUBLIC_URL}/image1.jpg`}
-                alt="Piano"
+                alt="Professional piano tuning and repair services by James Maggy, Berklee College of Music trained technician in Cincinnati"
                 className="about-image"
               />
               <div className="about-text">
                 <p>
-                  james maggy is a cincinnati based artist and piano technician currently
-                  servicing cincinnati, northern kentucky, and surrounding areas. a graduate
-                  of berklee college of music in boston massachusetts, james auditioned in
+                  James Maggy is a Cincinnati based artist and piano technician currently
+                  servicing Cincinnati, Northern Kentucky, and surrounding areas. A graduate
+                  of Berklee College of Music in Boston Massachusetts, James auditioned in
                   2012 and was accepted into the piano department- where he was principled
                   in piano technology, acoustics, and majored in composition in 2016.
                 </p>
                 <p>
-                  since then, james has maintained several pianos that were transported and
-                  serviced daily for regional touring. formerly based out of los angeles,
+                  Since then, James has maintained several pianos that were transported and
+                  serviced daily for regional touring. Formerly based out of Los Angeles,
                   much of his work has been on studio-pianos, though he is often working on
                   pianos in a client's home.
                 </p>
                 <p>
-                  whether it's a full restoration of a family heirloom or just a charming
-                  old piano someone is curious about playing again, james's attention for
+                  Whether it's a full restoration of a family heirloom or just a charming
+                  old piano someone is curious about playing again, James's attention for
                   adjustments and repairs are tailored to a piano's needs and client's budget.
                 </p>
               </div>
@@ -124,75 +364,75 @@ function App() {
               <div className="service-item">
                 <h4>piano tuning</h4>
                 <p>
-                  practiced in a method of tuning referred to as "equal temperament", meticulous
+                  Practiced in a method of tuning referred to as "equal temperament", meticulous
                   attention is given to "beat-rates" and relationships between notes on a piano.
-                  this ensures that each string is not only in tune, but properly compromising to
+                  This ensures that each string is not only in tune, but properly compromising to
                   create harmony with the rest of the notes on a piano.
                 </p>
               </div>
               <div className="service-item">
                 <h4>restoration</h4>
                 <p>
-                  the full restoration of a family heirloom or found treasure is an incredible project
+                  The full restoration of a family heirloom or found treasure is an incredible project
                   to be part of, as many piano's have such rich histories and have endured so many changes.
-                  some restoration projects require everything to be replaced besides the original plate
+                  Some restoration projects require everything to be replaced besides the original plate
                   and cabinet, while other projects are focused on utilizing as much of the original as
-                  possible. this can include rebuilding pieces of the originional actions and reinstalling
-                  the pins and felts that make every work effectively.
+                  possible. This can include rebuilding pieces of the original actions and reinstalling
+                  the pins and felts that make everything work effectively.
                 </p>
               </div>
               <div className="service-item">
                 <h4>repair</h4>
                 <p>
-                  taking the time to have professional repairs done on your piano can make a world of
-                  difference and transform your instrument quickly. whether you have a new piano with
+                  Taking the time to have professional repairs done on your piano can make a world of
+                  difference and transform your instrument quickly. Whether you have a new piano with
                   minor issues or an old piano that's been out of commission for years, a few hours of
                   attention can make a huge difference.
                 </p>
                 <p>
-                  sometimes client has a specific budget in mind. it's also not uncommon that a client
+                  Sometimes a client has a specific budget in mind. It's also not uncommon that a client
                   wants to preserve elements of the "old timey" sound of their piano for recording/etc.
-                  in these cases, a piano's needs can be triaged to restore essential functions of a
+                  In these cases, a piano's needs can be triaged to restore essential functions of a
                   piano, and returned to a place where it can be appreciated again.
                 </p>
               </div>
               <div className="service-item">
                 <h4>cleaning</h4>
                 <p>
-                  a thorough cleaning can often benefit the functioning of a piano, as well as improve
-                  air quality in a home. often things unnoticed are dropped inside parts of a piano and
-                  subtly influence performance. involving disassembly, a piano cleaning can reveal hidden
+                  A thorough cleaning can often benefit the functioning of a piano, as well as improve
+                  air quality in a home. Often things unnoticed are dropped inside parts of a piano and
+                  subtly influence performance. Involving disassembly, a piano cleaning can reveal hidden
                   treasure and quite literally breathe new life into an instrument.
                 </p>
               </div>
               <div className="service-item">
                 <h4>string replacement</h4>
                 <p>
-                  strings often break after moving a piano, during temperature changes, or sometimes
-                  spontaneously for seemingly no reason at all. the broken string can be left inside
-                  the piano so it can be later measured for it's replacement. broken bass strings will
-                  usually need to be ordered and custom-made. strings are carefully stretched and wound
-                  when installed. if you are replacing a string on your piano it may need to be tuned a
+                  Strings often break after moving a piano, during temperature changes, or sometimes
+                  spontaneously for seemingly no reason at all. The broken string can be left inside
+                  the piano so it can be later measured for its replacement. Broken bass strings will
+                  usually need to be ordered and custom-made. Strings are carefully stretched and wound
+                  when installed. If you are replacing a string on your piano it may need to be tuned a
                   second time in the year to help stretch the string to stay in tune.
                 </p>
               </div>
               <div className="service-item">
                 <h4>voicing & regulation</h4>
                 <p>
-                  voicing and regulation is the practiced technique of making adjustments to the action
+                  Voicing and regulation is the practiced technique of making adjustments to the action
                   and other mechanisms in the piano to optimize dynamics and the overall playability of
-                  a piano. if a piano is having issues with sticking keys, sustained notes, or unwanted
+                  a piano. If a piano is having issues with sticking keys, sustained notes, or unwanted
                   clicks/noises, a voicing and regulation is almost always where the issue will be resolved.
                 </p>
               </div>
               <div className="service-item">
                 <h4>key & pedal repair</h4>
                 <p>
-                  keys sometimes swell in changing climates or become damaged over time requiring adjustments
-                  to eliminate friction or noise and to match the feel of the rest of a piano. similar issues
-                  can arise with the pedals on a piano. both keys and pedals are responsible for triggering a
+                  Keys sometimes swell in changing climates or become damaged over time requiring adjustments
+                  to eliminate friction or noise and to match the feel of the rest of a piano. Similar issues
+                  can arise with the pedals on a piano. Both keys and pedals are responsible for triggering a
                   series of chain reactions within a piano which makes adjustments to the alignment and
-                  resistance of these parts extremely influential to a pianos sound and feel.
+                  resistance of these parts extremely influential to a piano's sound and feel.
                 </p>
               </div>
             </div>
@@ -312,19 +552,19 @@ function App() {
               <div className="faq-item">
                 <h4>how often should my piano be tuned?</h4>
                 <p>
-                  most pianos should be tuned at least once or twice a year to maintain
-                  optimal performance. pianos in concert settings or heavy use may require
-                  more frequent tuning. if your piano hasn't been tuned in over 5 years,
+                  Most pianos should be tuned at least once or twice a year to maintain
+                  optimal performance. Pianos in concert settings or heavy use may require
+                  more frequent tuning. If your piano hasn't been tuned in over 5 years,
                   it will typically require two tunings to properly hold pitch.
                 </p>
               </div>
               <div className="faq-item">
                 <h4>what does a tuning cost?</h4>
                 <p>
-                  • between $100 & $200 depending on location and the condition of the piano.
+                  • Between $100 & $200 depending on location and the condition of the piano.
                 </p>
                 <p>
-                  • a piano thats been kept in fluctuating temperatures or hasn't been tuned
+                  • A piano that's been kept in fluctuating temperatures or hasn't been tuned
                   in 5+ years typically needs to be tuned twice (sometimes in one visit) to
                   hold a pitch.
                 </p>
@@ -332,24 +572,24 @@ function App() {
               <div className="faq-item">
                 <h4>how much does it cost to fix sticky keys?</h4>
                 <p>
-                  • a lot of the time sticky-key issues are something i can fix via making
-                  adjustments while i'm tuning a piano. if that's the case, i cover minor
+                  • A lot of the time sticky-key issues are something I can fix via making
+                  adjustments while I'm tuning a piano. If that's the case, I cover minor
                   repairs in my tuning rate. ($150-$200)
                 </p>
                 <p>
-                  • other times keys are sticking because pieces within the piano-action
-                  need to be replaced. luckily, a majority of the replacement parts are
-                  very inexpensive- they just take time to install. depending on the project
+                  • Other times keys are sticking because pieces within the piano-action
+                  need to be replaced. Luckily, a majority of the replacement parts are
+                  very inexpensive- they just take time to install. Depending on the project
                   it could take one to 2 hours. ($100-$200)
                 </p>
               </div>
               <div className="faq-item">
                 <h4>do you work on antique pianos?</h4>
                 <p>
-                  absolutely. i especially enjoy bringing older pianos back to life. a full-on
-                  restoration can become pretty elaborate. sometimes a client has a specific
-                  budget in mind. it's also not uncommon that a client wants to preserve elements
-                  of the "old timey" sound of their piano for recording/etc. in these cases i can
+                  Absolutely. I especially enjoy bringing older pianos back to life. A full-on
+                  restoration can become pretty elaborate. Sometimes a client has a specific
+                  budget in mind. It's also not uncommon that a client wants to preserve elements
+                  of the "old timey" sound of their piano for recording/etc. In these cases I can
                   triage a piano's needs and restore essential functions of a piano, bringing it
                   back to a place where it can be appreciated again.
                 </p>
@@ -357,16 +597,16 @@ function App() {
               <div className="faq-item">
                 <h4>what areas do you service?</h4>
                 <p>
-                  primary service area includes cincinnati, northern kentucky, eastern indiana,
-                  and surrounding communities including dayton, mason, and fairfield. contact to
+                  Primary service area includes Cincinnati, Northern Kentucky, Eastern Indiana,
+                  and surrounding communities including Dayton, Mason, and Fairfield. Contact to
                   confirm service availability in your specific location.
                 </p>
               </div>
               <div className="faq-item">
                 <h4>why does my piano need multiple tunings if it hasn't been tuned in years?</h4>
                 <p>
-                  pianos that have been in fluctuating temperatures or haven't been tuned in
-                  5+ years typically require two tunings. the first brings the piano closer
+                  Pianos that have been in fluctuating temperatures or haven't been tuned in
+                  5+ years typically require two tunings. The first brings the piano closer
                   to pitch, and the second (done after the piano has settled) ensures it holds
                   that pitch properly over time.
                 </p>
@@ -374,11 +614,11 @@ function App() {
               <div className="faq-item">
                 <h4>what is your background and training?</h4>
                 <p>
-                  a graduate of berklee college of music in boston massachusetts, james auditioned
+                  A graduate of Berklee College of Music in Boston Massachusetts, James auditioned
                   in 2012 and was accepted into the piano department- where he was principled in
-                  piano technology, acoustics, and majored in composition in 2016. since then,
-                  james has maintained several pianos that were transported and serviced daily
-                  for regional touring. formerly based out of los angeles, much of his work has
+                  piano technology, acoustics, and majored in composition in 2016. Since then,
+                  James has maintained several pianos that were transported and serviced daily
+                  for regional touring. Formerly based out of Los Angeles, much of his work has
                   been on studio-pianos, though he is often working on pianos in a client's home,
                   whether it's a full restoration of a family heirloom or just a charming old piano
                   someone is curious about playing again.
@@ -400,9 +640,9 @@ function App() {
                 </div>
                 <div className="detail-item">
                   <h4>service area</h4>
-                  <p>cincinnati, oh<br/>
-                  northern kentucky<br/>
-                  southern indiana</p>
+                  <p>Cincinnati, OH<br/>
+                  Northern Kentucky<br/>
+                  Southern Indiana</p>
                 </div>
               </div>
               <form
@@ -459,7 +699,7 @@ function App() {
         </section>
 
         <footer className="footer">
-          <p>&copy; {new Date().getFullYear()} maggy piano services. cincinnati, ohio.</p>
+          <p>&copy; {new Date().getFullYear()} Maggy Piano Services. Cincinnati, Ohio.</p>
         </footer>
       </main>
     </div>
