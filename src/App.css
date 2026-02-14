@@ -214,14 +214,56 @@ html {
   color: #ffffff;
 }
 
-.hero-content h2 {
-  font-size: 120px;
+.hero-content h1 {
+  font-size: 56px;
   font-weight: 700;
-  letter-spacing: -6px;
-  line-height: 0.85;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+  letter-spacing: -3px;
+  line-height: 1.1;
+  margin-bottom: 20px;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-phone {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid #ffffff;
+  transition: all 0.3s ease;
+}
+
+.hero-phone:hover {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.hero-price {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
 }
 
 .tagline {
@@ -241,7 +283,7 @@ section {
   margin: 0 auto;
 }
 
-h3 {
+h2 {
   font-size: 48px;
   font-weight: 700;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -315,7 +357,7 @@ h3 {
   border-left: 3px solid #666666;
 }
 
-.service-item h4 {
+.service-item h3 {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -469,7 +511,7 @@ h3 {
   border-bottom: none;
 }
 
-.faq-item h4 {
+.faq-item h3 {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -1px;
@@ -500,7 +542,7 @@ h3 {
   z-index: 1;
 }
 
-.contact h3 {
+.contact h2 {
   color: #ffffff;
 }
 
@@ -516,7 +558,7 @@ h3 {
   gap: 40px;
 }
 
-.detail-item h4 {
+.detail-item h3 {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -608,9 +650,9 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .hero-content h2 {
-    font-size: 80px;
-    letter-spacing: -4px;
+  .hero-content h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
   }
 
   .contact-container {
@@ -711,16 +753,25 @@ h3 {
     background-position: center center !important;
   }
 
-  .hero-content h2 {
-    font-size: 48px;
-    letter-spacing: -2px;
+  .hero-content h1 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
   }
 
-  .tagline {
-    font-size: 18px;
+  .hero-subtitle {
+    font-size: 16px;
   }
 
-  h3 {
+  .hero-phone {
+    font-size: 20px;
+    padding: 10px 24px;
+  }
+
+  .hero-price {
+    font-size: 16px;
+  }
+
+  h2 {
     font-size: 32px;
     letter-spacing: -1px;
     margin-bottom: 40px;
@@ -750,7 +801,7 @@ h3 {
     padding: 30px 25px;
   }
 
-  .service-item h4 {
+  .service-item h3 {
     font-size: 18px;
   }
 
@@ -794,7 +845,7 @@ h3 {
     font-size: 12px;
   }
 
-  .faq-item h4 {
+  .faq-item h3 {
     font-size: 18px;
   }
 
@@ -807,7 +858,7 @@ h3 {
     gap: 40px;
   }
 
-  .detail-item h4 {
+  .detail-item h3 {
     font-size: 12px;
   }
 
@@ -871,16 +922,25 @@ h3 {
     background-position: center center !important;
   }
 
-  .hero-content h2 {
-    font-size: 36px;
-    letter-spacing: -1.5px;
+  .hero-content h1 {
+    font-size: 28px;
+    letter-spacing: -1px;
   }
 
-  .tagline {
-    font-size: 16px;
+  .hero-subtitle {
+    font-size: 14px;
   }
 
-  h3 {
+  .hero-phone {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .hero-price {
+    font-size: 14px;
+  }
+
+  h2 {
     font-size: 28px;
     margin-bottom: 30px;
   }
@@ -899,8 +959,8 @@ h3 {
     padding: 25px 20px;
   }
 
-  .service-item h4,
-  .faq-item h4 {
+  .service-item h3,
+  .faq-item h3 {
     font-size: 16px;
   }
 

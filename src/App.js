@@ -349,12 +349,20 @@ function App() {
             backgroundImage: `url(${process.env.PUBLIC_URL}/image2.jpg)`
           }}
         >
+          <div className="hero-content">
+            <h1>Cincinnati Piano Tuning & Repair</h1>
+            <p className="hero-subtitle">Professional piano services by a Berklee-trained technician. Serving Cincinnati, Northern Kentucky & Southern Indiana.</p>
+            <p className="hero-cta">
+              <a href="tel:8156039854" className="hero-phone">Call 815-603-9854</a>
+              <span className="hero-price">$100-$200</span>
+            </p>
+          </div>
         </section>
 
         {/* About Section */}
         <section id="about" className="about">
           <div className="section-content">
-            <h3>about</h3>
+            <h2>about</h2>
             <div className="about-container">
               <img
                 src={`${process.env.PUBLIC_URL}/image1.jpg`}
@@ -388,10 +396,10 @@ function App() {
         {/* Services Section */}
         <section id="services" className="services">
           <div className="section-content">
-            <h3>services</h3>
+            <h2>services</h2>
             <div className="services-grid">
               <div className="service-item">
-                <h4>piano tuning</h4>
+                <h3>piano tuning</h3>
                 <p>
                   Practiced in a method of tuning referred to as "equal temperament", meticulous
                   attention is given to "beat-rates" and relationships between notes on a piano.
@@ -400,7 +408,7 @@ function App() {
                 </p>
               </div>
               <div className="service-item">
-                <h4>restoration</h4>
+                <h3>restoration</h3>
                 <p>
                   The full restoration of a family heirloom or found treasure is an incredible project
                   to be part of, as many piano's have such rich histories and have endured so many changes.
@@ -411,7 +419,7 @@ function App() {
                 </p>
               </div>
               <div className="service-item">
-                <h4>repair</h4>
+                <h3>repair</h3>
                 <p>
                   Taking the time to have professional repairs done on your piano can make a world of
                   difference and transform your instrument quickly. Whether you have a new piano with
@@ -426,7 +434,7 @@ function App() {
                 </p>
               </div>
               <div className="service-item">
-                <h4>cleaning</h4>
+                <h3>cleaning</h3>
                 <p>
                   A thorough cleaning can often benefit the functioning of a piano, as well as improve
                   air quality in a home. Often things unnoticed are dropped inside parts of a piano and
@@ -435,7 +443,7 @@ function App() {
                 </p>
               </div>
               <div className="service-item">
-                <h4>string replacement</h4>
+                <h3>string replacement</h3>
                 <p>
                   Strings often break after moving a piano, during temperature changes, or sometimes
                   spontaneously for seemingly no reason at all. The broken string can be left inside
@@ -446,7 +454,7 @@ function App() {
                 </p>
               </div>
               <div className="service-item">
-                <h4>voicing & regulation</h4>
+                <h3>voicing & regulation</h3>
                 <p>
                   Voicing and regulation is the practiced technique of making adjustments to the action
                   and other mechanisms in the piano to optimize dynamics and the overall playability of
@@ -455,7 +463,7 @@ function App() {
                 </p>
               </div>
               <div className="service-item">
-                <h4>key & pedal repair</h4>
+                <h3>key & pedal repair</h3>
                 <p>
                   Keys sometimes swell in changing climates or become damaged over time requiring adjustments
                   to eliminate friction or noise and to match the feel of the rest of a piano. Similar issues
@@ -471,7 +479,7 @@ function App() {
         {/* Testimonials Section */}
         <section id="testimonials" className="testimonials">
           <div className="section-content">
-            <h3>thumbtack reviews</h3>
+            <h2>thumbtack reviews</h2>
             <div className="testimonials-grid">
               <div className="testimonial-item testimonial-large">
                 <div className="quote-mark">"</div>
@@ -576,10 +584,10 @@ function App() {
         {/* FAQ Section */}
         <section id="faq" className="faq">
           <div className="section-content">
-            <h3>frequently asked questions</h3>
+            <h2>frequently asked questions</h2>
             <div className="faq-list">
               <div className="faq-item">
-                <h4>how often should my piano be tuned?</h4>
+                <h3>how often should my piano be tuned?</h3>
                 <p>
                   Most pianos should be tuned at least once or twice a year to maintain
                   optimal performance. Pianos in concert settings or heavy use may require
@@ -588,7 +596,7 @@ function App() {
                 </p>
               </div>
               <div className="faq-item">
-                <h4>what does a tuning cost?</h4>
+                <h3>what does a tuning cost?</h3>
                 <p>
                   • Between $100 & $200 depending on location and the condition of the piano.
                 </p>
@@ -599,7 +607,7 @@ function App() {
                 </p>
               </div>
               <div className="faq-item">
-                <h4>how much does it cost to fix sticky keys?</h4>
+                <h3>how much does it cost to fix sticky keys?</h3>
                 <p>
                   • A lot of the time sticky-key issues are something I can fix via making
                   adjustments while I'm tuning a piano. If that's the case, I cover minor
@@ -613,7 +621,7 @@ function App() {
                 </p>
               </div>
               <div className="faq-item">
-                <h4>do you work on antique pianos?</h4>
+                <h3>do you work on antique pianos?</h3>
                 <p>
                   Absolutely. I especially enjoy bringing older pianos back to life. A full-on
                   restoration can become pretty elaborate. Sometimes a client has a specific
@@ -624,7 +632,7 @@ function App() {
                 </p>
               </div>
               <div className="faq-item">
-                <h4>what areas do you service?</h4>
+                <h3>what areas do you service?</h3>
                 <p>
                   Primary service area includes Cincinnati, Northern Kentucky, Eastern Indiana,
                   and surrounding communities including Dayton, Mason, and Fairfield. Contact to
@@ -632,7 +640,7 @@ function App() {
                 </p>
               </div>
               <div className="faq-item">
-                <h4>why does my piano need multiple tunings if it hasn't been tuned in years?</h4>
+                <h3>why does my piano need multiple tunings if it hasn't been tuned in years?</h3>
                 <p>
                   Pianos that have been in fluctuating temperatures or haven't been tuned in
                   5+ years typically require two tunings. The first brings the piano closer
@@ -641,7 +649,7 @@ function App() {
                 </p>
               </div>
               <div className="faq-item">
-                <h4>what is your background and training?</h4>
+                <h3>what is your background and training?</h3>
                 <p>
                   A graduate of Berklee College of Music in Boston Massachusetts, James auditioned
                   in 2012 and was accepted into the piano department- where he was principled in
@@ -660,15 +668,15 @@ function App() {
         {/* Contact Section */}
         <section id="contact" className="contact">
           <div className="section-content">
-            <h3>get in touch</h3>
+            <h2>get in touch</h2>
             <div className="contact-container">
               <div className="contact-details">
                 <div className="detail-item">
-                  <h4>phone</h4>
+                  <h3>phone</h3>
                   <p><a href="tel:8156039854">815-603-9854</a></p>
                 </div>
                 <div className="detail-item">
-                  <h4>service area</h4>
+                  <h3>service area</h3>
                   <p>Cincinnati, OH<br/>
                   Northern Kentucky<br/>
                   Southern Indiana</p>
