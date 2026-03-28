@@ -349,14 +349,6 @@ function App() {
             backgroundImage: `url(${process.env.PUBLIC_URL}/image2.jpg)`
           }}
         >
-          <div className="hero-content">
-            <h1>Cincinnati Piano Tuning & Repair</h1>
-            <p className="hero-subtitle">Professional piano services by a Berklee-trained technician. Serving Cincinnati, Northern Kentucky & Southern Indiana.</p>
-            <p className="hero-cta">
-              <a href="tel:8156039854" className="hero-phone">Call 815-603-9854</a>
-              <span className="hero-price">$100-$200</span>
-            </p>
-          </div>
         </section>
 
         {/* About Section */}
