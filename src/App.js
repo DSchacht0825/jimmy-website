@@ -749,6 +749,7 @@ function App() {
 
         <footer className="footer">
           <p>&copy; {new Date().getFullYear()} Maggy Piano Services. Cincinnati, Ohio.</p>
+          <p style={{marginTop: '0.5rem', fontSize: '0.85rem', opacity: 0.8}}>Website by <a href="https://causory.com" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>Causory</a></p>
         </footer>
       </main>
     </div>
